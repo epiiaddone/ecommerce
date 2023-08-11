@@ -13,6 +13,9 @@ import {
   GET_SINGLE_PRODUCT_ERROR,
 } from '../actions'
 
+import getProducts from '../utils/getProducts'
+import mockData from '../utils/mockData'
+
 const initialState = {
   isSidebarOpen: false,
   products_loading: false,
@@ -39,8 +42,11 @@ export const ProductsProvider = ({ children }) => {
   const fetchProducts = async (url) => {
     dispatch({ type: GET_PRODUCTS_BEGIN })
     try {
-      const response = await axios.get(url)
-      const products = response.data
+      //const response = await axios.get(url)
+      //const products = response.data
+
+      const products = mockData;
+
       dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
     } catch (error) {
       dispatch({ type: GET_PRODUCTS_ERROR })
@@ -49,8 +55,15 @@ export const ProductsProvider = ({ children }) => {
   const fetchSingleProduct = async (url) => {
     dispatch({ type: GET_SINGLE_PRODUCT_BEGIN })
     try {
-      const response = await axios.get(url)
-      const singleProduct = response.data
+
+      const id = url.substring(url.lastIndexOf("id=") + 3);
+      const mockSingleProduct = mockData.filter((item)=>item.id===id)
+      const singleProduct = mockSingleProduct[0];
+      console.log(singleProduct);
+
+      //const response = await axios.get(url)
+      //const singleProduct = response.data
+
       dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct })
     } catch (error) {
       dispatch({ type: GET_SINGLE_PRODUCT_ERROR })

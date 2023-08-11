@@ -8,6 +8,7 @@ const airtable = new Airtable({apiKey: process.env.AIRTABLE_API_KEY})
 
 
 exports.handler = async (event, context, cb) => {
+    console.log(process.env.AIRTABLE_API_KEY, process.env.AIRTABLE_BASE, process.env.AIRTABLE_TABLE );
     const {id} = event.queryStringParameters;
     if(id){
         try{

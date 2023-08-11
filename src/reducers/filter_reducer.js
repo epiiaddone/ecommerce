@@ -14,8 +14,8 @@ const filter_reducer = (state, action) => {
 
     let maxPrice = 10000;
     if(action.payload.length > 0){
-      //payload.map is not a function
-      //maxPrice = action.payload.map((p) => p.price);
+      maxPrice = action.payload.map((p) => p.price);
+      maxPrice = Math.max(...maxPrice);
     }
 
     return {
