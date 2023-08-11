@@ -6,6 +6,7 @@ const airtable = new Airtable({apiKey: process.env.AIRTABLE_API_KEY})
 .base(process.env.AIRTABLE_BASE)
 .table(process.env.AIRTABLE_TABLE);
 
+console.log(process.env.AIRTABLE_API_KEY, process.env.AIRTABLE_BASE, process.env.AIRTABLE_TABLE );
 
 exports.handler = async (event, context, cb) => {
     try{
