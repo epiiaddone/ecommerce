@@ -9,7 +9,7 @@ const Filters = () => {
     filters: {
       text,
       category,
-      company,
+      brand,
       color,
       min_price,
       price,
@@ -22,7 +22,7 @@ const Filters = () => {
   } = useFilterContext()
 
   const categories = getUniqueValues(all_products, 'category')
-  const companies = getUniqueValues(all_products, 'company')
+  const companies = getUniqueValues(all_products, 'brand')
   const colors = getUniqueValues(all_products, 'colors')
   return (
     <Wrapper>
@@ -62,14 +62,14 @@ const Filters = () => {
             </div>
           </div>
           {/* end of category */}
-          {/* company */}
+          {/* brand */}
           <div className='form-control'>
-            <h5>company</h5>
+            <h5>brand</h5>
             <select
-              name='company'
-              value={company}
+              name='brand'
+              value={brand}
               onChange={updateFilters}
-              className='company'
+              className='brand'
             >
               {companies.map((c, index) => {
                 return (
@@ -80,7 +80,7 @@ const Filters = () => {
               })}
             </select>
           </div>
-          {/* end of company */}
+          {/* end of brand */}
           {/* colors */}
           <div className='form-control'>
             <h5>colors</h5>
@@ -187,7 +187,7 @@ const Wrapper = styled.section`
   .active {
     border-color: var(--clr-grey-5);
   }
-  .company {
+  .brand {
     background: var(--clr-grey-10);
     border-radius: var(--radius);
     border-color: transparent;

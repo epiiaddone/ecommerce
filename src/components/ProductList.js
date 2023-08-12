@@ -7,7 +7,7 @@ import getProducts from '../utils/getProducts'
 
 const ProductList = () => {
 
-  getProducts();
+ getProducts();
 
   const {filtered_products: products, grid_view} = useFilterContext();
 

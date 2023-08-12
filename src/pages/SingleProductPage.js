@@ -14,8 +14,11 @@ import {
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 const SingleProductPage = () => {
+
   const { id } = useParams();
+
   const navigate = useNavigate();
+
   const {
     single_product_loading: loading,
     single_product_error: error,
@@ -27,6 +30,7 @@ const SingleProductPage = () => {
     fetchSingleProduct(`${url}${id}`);
     // eslint-disable-next-line
   }, [id]);
+
   useEffect(() => {
     if (error) {
       setTimeout(() => {
@@ -35,6 +39,7 @@ const SingleProductPage = () => {
     }
     // eslint-disable-next-line
   }, [error]);
+  
   if (loading) {
     return <Loading />;
   }
@@ -50,7 +55,7 @@ const SingleProductPage = () => {
     stars,
     reviews,
     id: sku,
-    brand:company,
+    brand,
     images,
   } = product;
   return (
@@ -77,7 +82,7 @@ const SingleProductPage = () => {
             </p>
             <p className='info'>
               <span>Brand :</span>
-              {company}
+              {brand}
             </p>
             <hr />
             {stock > 0 && <AddToCart product={product} />}
