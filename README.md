@@ -1,33 +1,30 @@
+# Apparel Store
 
-### Tech Stack
-state managemet: 
-useContext
-useReducer
+## Table of contents
 
-css: 
-styled components
+- [Overview](#overview)
+- [Technologies](#technologies)
+- [To Do](#to-do)
+- [Acknowledgments](#acknowledgments)
 
-3rd Party SAS:
-Stripe
-Auth0
+## Overview
 
-Headless CMS:
-Airtable
+Ecommerce site with product filter and shopping cart.
 
-#### Run
-npm start -> port 3000
-npm run dev -> port 8888 (netlify-cli)
+## Technologies
 
-#### Variables on netlify
-REACT_APP_AUTH_DOMAIN=
-REACT_APP_CLIENT_ID=
-REACT_APP_STRIPE_PUBLIC_KEY=
-REACT_APP_STRIPE_SECRET_KEY=
-AIRTABLE_API_KEY=
-AIRTABLE_BASE=
-AIRTABLE_TABLE=
+- React: 18.2.0
+- React Router: 6.4.3
+- Axios: 1.4.0
 
-#### Resources
-favicon.io
-tailwind for colors
-pexels for hero images
+## To Do
+
+## Acknowledgments
+- [Udemy: React 18 Tutorial and Projects Course](https://www.udemy.com/course/react-tutorial-and-projects-course/)
+- [Styled Components](https://styled-components.com/)
+- [Stripe](https://stripe.com/)
+- [Auth0](https://auth0.com/)
+- [Airtable](https://airtable.com/)
+- [favicon.io](https://favicon.io/)
+- [Netlify CLI](https://docs.netlify.com/cli/get-started/)
+- [React Icons](https://react-icons.github.io/react-icons/)
