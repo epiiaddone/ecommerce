@@ -1,27 +1,41 @@
+import vneckTshirtImg from '../assets/products/vneck-tshirt.jpg';
+import roundNectTshirt from '../assets/products/roundneck-tshirt.jpg';
+import checkTshirt from '../assets/products/check-shirt.jpg';
+import denimShorts from '../assets/products/denim-shorts.jpg';
+import cottonShorts from '../assets/products/cotton-shorts.jpg';
+import linenShorts from '../assets/products/linen-shorts.jpg';
+import plainHoodie from '../assets/products/plain-hoodie.jpg';
+import pocketHoodie from '../assets/products/pocket-hoodie.jpg';
+import shortSleevedHoodie from '../assets/products/short-sleeve-hoodie.jpg'
 
+//dummy photos
+import zAdditional1 from '../assets/products/z-additional-1.jpg';
+import zAdditional2 from '../assets/products/z-additional-2.jpg';
+import zAdditional3 from '../assets/products/z-additional-3.jpg';
+import zAdditional4 from '../assets/products/z-additional-4.jpg';
 
 const mockData = [
     {
-    category: "shirt",
-    colors:  ['#000', '#42f548', '#9342f5', '#f5f242'],
-    brand: "American Apparel",
-    description: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-    featured: undefined,
-    id: "recvMQ3C9uMNMpDFx",
-    image:'/assets/products/vneck-tshirt.jpg',
-    name: "V Neck T-Shirt",
-    price: 599,
-    shipping:true,
-    stock:7,
-    reviews:4,
-    stars:4.2,
-    images:[
-        'assets/products/vneck-tshirt.jpg',
-        'assets/products/z-additional-1-jpg',
-        'assets/products/z-additional-2-jpg',
-        'assets/products/z-additional-3-jpg',
-        'assets/products/z-additional-4-jpg'
-    ]
+        category: "shirt",
+        colors: ['#000', '#42f548', '#9342f5', '#f5f242'],
+        brand: "American Apparel",
+        description: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+        featured: undefined,
+        id: "recvMQ3C9uMNMpDFx",
+        image: '/assets/products/vneck-tshirt.jpg',
+        name: "V Neck T-Shirt",
+        price: 599,
+        shipping: true,
+        stock: 7,
+        reviews: 4,
+        stars: 4.2,
+        images: [
+            vneckTshirtImg,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
+        ]
     },
     {
         category: "shirt",
@@ -33,16 +47,16 @@ const mockData = [
         image: "https://v5.airtableusercontent.com/v1/19/19/1691762400000/ubCe-rKwgr24kZ8r41DVgg/2ipgzPSJi338DiI2pnp3JiqXdRGN9e1GgCifLpztv8zRR6JVgQpP1365LyGgwPk1vSM_ocyIjHPRjpYIKfB7j0iZOS4S190eG20BCwLS0ks/eZFPxFPLbI5UtfVH-kvXx69I0qWnL54ivfPVpmyhF_o",
         name: "Round Neck T-Shirt",
         price: 699,
-        shipping:true,
-        stock:1,
-        reviews:17,
-        stars:4.8,
-        images:[
-            'assets/products/roundneck-tshirt.jpg',
-            'assets/products/z-additional-1-jpg',
-            'assets/products/z-additional-2-jpg',
-            'assets/products/z-additional-3-jpg',
-            'assets/products/z-additional-4-jpg'
+        shipping: true,
+        stock: 1,
+        reviews: 17,
+        stars: 4.8,
+        images: [
+            roundNectTshirt,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
         ]
     },
     {
@@ -56,15 +70,15 @@ const mockData = [
         name: "Check T-Shirt",
         price: 850,
         shipping: true,
-        stock:2,
-        reviews:11,
-        stars:3.8,
-        images:[
-            'assets/products/check-shirt.jpg',
-            'assets/products/z-additional-1-jpg',
-            'assets/products/z-additional-2-jpg',
-            'assets/products/z-additional-3-jpg',
-            'assets/products/z-additional-4-jpg'
+        stock: 2,
+        reviews: 11,
+        stars: 3.8,
+        images: [
+            checkTshirt,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
         ]
     },
     {
@@ -78,15 +92,15 @@ const mockData = [
         name: "Denim Shorts",
         price: 1245,
         shipping: undefined,
-        stock:5,
-        reviews:22,
-        stars:2.9,
-        images:[
-            'assets/products/denim-shorts.jpg',
-            'assets/products/z-additional-1-jpg',
-            'assets/products/z-additional-2-jpg',
-            'assets/products/z-additional-3-jpg',
-            'assets/products/z-additional-4-jpg'
+        stock: 5,
+        reviews: 22,
+        stars: 2.9,
+        images: [
+            denimShorts,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
         ]
     },
     {
@@ -100,15 +114,15 @@ const mockData = [
         name: "Cotton Shorts",
         price: 1450,
         shipping: undefined,
-        stock:1,
-        reviews:9,
-        stars:4.6,
-        images:[
-            'assets/products/cotton-shorts.jpg',
-            'assets/products/z-additional-1-jpg',
-            'assets/products/z-additional-2-jpg',
-            'assets/products/z-additional-3-jpg',
-            'assets/products/z-additional-4-jpg'
+        stock: 1,
+        reviews: 9,
+        stars: 4.6,
+        images: [
+            cottonShorts,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
         ]
     },
     {
@@ -122,15 +136,15 @@ const mockData = [
         name: "Linen Shorts",
         price: 1999,
         shipping: true,
-        stock:4,
-        reviews:13,
-        stars:4.1,
-        images:[
-            'assets/products/linen-shorts.jpg',
-            'assets/products/z-additional-1-jpg',
-            'assets/products/z-additional-2-jpg',
-            'assets/products/z-additional-3-jpg',
-            'assets/products/z-additional-4-jpg'
+        stock: 4,
+        reviews: 13,
+        stars: 4.1,
+        images: [
+            linenShorts,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
         ]
     },
     {
@@ -144,15 +158,15 @@ const mockData = [
         name: "Plain Hoodie",
         price: 2369,
         shipping: undefined,
-        stock:2,
-        reviews:4,
-        stars:1.8,
-        images:[
-            'assets/products/plain-hoodie.jpg',
-            'assets/products/z-additional-1-jpg',
-            'assets/products/z-additional-2-jpg',
-            'assets/products/z-additional-3-jpg',
-            'assets/products/z-additional-4-jpg'
+        stock: 2,
+        reviews: 4,
+        stars: 1.8,
+        images: [
+            plainHoodie,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
         ]
     },
     {
@@ -166,15 +180,15 @@ const mockData = [
         name: "Pocket Hoodie",
         price: 2599,
         shipping: undefined,
-        stock:6,
-        reviews:13,
-        stars:2.5,
-        images:[
-            'assets/products/pocket-hoodie.jpg',
-            'assets/products/z-additional-1-jpg',
-            'assets/products/z-additional-2-jpg',
-            'assets/products/z-additional-3-jpg',
-            'assets/products/z-additional-4-jpg'
+        stock: 6,
+        reviews: 13,
+        stars: 2.5,
+        images: [
+            pocketHoodie,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
         ]
     },
     {
@@ -188,15 +202,15 @@ const mockData = [
         name: "Short Sleeve Hoodie",
         price: 2899,
         shipping: true,
-        stock:3,
-        reviews:6,
-        stars:4.4,
-        images:[
-            'assets/products/short-sleeve-hoodie.jpg',
-            'assets/products/z-additional-1-jpg',
-            'assets/products/z-additional-2-jpg',
-            'assets/products/z-additional-3-jpg',
-            'assets/products/z-additional-4-jpg'
+        stock: 3,
+        reviews: 6,
+        stars: 4.4,
+        images: [
+            shortSleevedHoodie,
+            zAdditional1,
+            zAdditional2,
+            zAdditional3,
+            zAdditional4
         ]
     }
 
